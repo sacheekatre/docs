@@ -1,0 +1,89 @@
+---
+title: "Choosing the Right Electronic Signature Type"
+sidebarTitle: "Signature Types"
+description: "Understand the difference between Simple, Advanced, and Qualified electronic signatures in Closd and when to use each under EU eIDAS regulations."
+---
+
+EU law — specifically the eIDAS Regulation — defines three levels of electronic signature, each carrying different legal weight and requiring different levels of identity verification. Closd supports all three, so you can match the signature type to the legal requirements of each document in your transaction.
+
+## Signature Types Compared
+
+<Tabs>
+  <Tab title="Simple (SES)">
+    **What it is**
+
+    A Simple Electronic Signature (SES) is a click-to-sign mechanism. The signer opens the document via their email invitation link and clicks to apply their signature — no additional identity verification is required.
+
+    **How identity is verified**
+
+    Identity is not independently verified beyond access to the signer's email address. The audit trail records the signer's email, IP address, and timestamp.
+
+    **What it's suitable for**
+
+    SES is appropriate for documents where speed and convenience matter most and the legal risk of a disputed signature is low. Typical use cases include:
+    - Non-disclosure agreements (NDAs)
+    - Board resolutions
+    - Routine commercial agreements
+    - Internal approval documents
+
+    **Provider**
+
+    Simple signatures are supported via **DocuSign**.
+  </Tab>
+  <Tab title="Advanced (AES)">
+    **What it is**
+
+    An Advanced Electronic Signature (AES) links the signature to the signer's identity through a multi-step verification process. This provides a higher level of assurance that the right person signed the document.
+
+    **How identity is verified**
+
+    Before signing, the signer must verify their identity via a **one-time passcode (OTP)** sent to their email and mobile phone (SMS). Both channels must be confirmed, creating a stronger link between the signer and the signature.
+
+    **What it's suitable for**
+
+    AES strikes the right balance between legal certainty and practical convenience for most professional transactions. Typical use cases include:
+    - Employment contracts
+    - Commercial leases
+    - Loan agreements
+    - Non-regulated commercial agreements where counterparty identity is important
+
+    **Provider**
+
+    Advanced signatures are supported via **DocuSign**.
+  </Tab>
+  <Tab title="Qualified (QES)">
+    **What it is**
+
+    A Qualified Electronic Signature (QES) is the highest standard of electronic signature defined by eIDAS. It is legally equivalent to a handwritten signature across all EU member states and carries the strongest evidentiary weight in any dispute.
+
+    **How identity is verified**
+
+    QES requires a **qualified certificate** issued by a trusted service provider accredited under eIDAS. The signer's identity must be verified in advance — typically through a face-to-face or video identification process — before the certificate is issued. This one-time verification unlocks the signer's ability to apply a QES going forward.
+
+    **What it's suitable for**
+
+    QES is required or strongly recommended when local law mandates it or when the document carries significant legal consequences. Typical use cases include:
+    - Notarized deeds and authentic instruments
+    - Real estate transfers
+    - Regulated filings with public authorities
+    - Documents expressly requiring a handwritten-equivalent signature under applicable law
+
+    **Provider**
+
+    Qualified signatures in Closd are handled by **CertEurope**, a French qualified trust service provider (QTSP) accredited under eIDAS.
+  </Tab>
+</Tabs>
+
+## Choosing the Right Type
+
+For most M&A signing ceremonies and commercial transactions, **Advanced (AES)** provides the right balance of legal certainty and convenience. The two-factor identity verification satisfies the requirements of most deal documents while keeping the experience smooth for counterparties.
+
+Use **Qualified (QES)** when your legal counsel expressly requires it, when the document type is governed by rules that mandate an equivalent-to-handwritten standard, or when local law in the relevant jurisdiction mandates it. Use **Simple (SES)** for lower-stakes documents where administrative speed is the priority.
+
+<Note>
+  The guidance on this page is informational only and does not constitute legal advice. The appropriate signature type depends on the specific document, applicable law, and the jurisdiction of the parties involved. Always consult your legal counsel to determine the correct signature level for your transaction.
+</Note>
+
+<Info>
+  Under the eIDAS Regulation, electronic signatures issued at any of these three levels are recognized across all EU member states. A QES issued by a provider in one EU country — such as CertEurope in France — has the same legal effect in all other EU member states as a handwritten signature.
+</Info>

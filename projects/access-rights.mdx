@@ -1,0 +1,72 @@
+---
+title: "Control Document and Project Access Rights"
+sidebarTitle: "Access Rights"
+description: "Configure granular access rights in Closd to control who can view, edit, upload, or download specific documents and folders in your project."
+---
+
+Not every member of a deal team needs access to every document. Closd gives you fine-grained control over who can see, edit, and download content within your project — at both the project level and at the level of individual folders. This is especially important in transactions where different parties (buy-side, sell-side, lenders, regulators) should each see only their own slice of the data room.
+
+## Project-Level Access
+
+Every user you add to a project is assigned a **project role** that determines their baseline level of access across the entire workspace. There are three roles:
+
+| Role | What They Can Do |
+|---|---|
+| **Admin** | Full control — manage members, change settings, create and delete folders, and configure access rights |
+| **Editor** | Upload and manage documents, update checklist items, and collaborate actively on the project |
+| **Viewer** | Read-only access — view documents and checklists (subject to folder-level permissions) but cannot upload or make changes |
+
+To assign or change a member's role, go to the **Members** tab in your project, click the role displayed next to the user's name, and select the new role from the dropdown.
+
+## Folder-Level Permissions
+
+Project roles set the ceiling for what a user can do, but folder-level permissions let you **narrow access further** for specific parts of the document library. This is the key tool for managing a multi-party data room.
+
+For each folder, you can assign one of three permission levels to any user or user group:
+
+| Permission | What It Allows |
+|---|---|
+| **No Access** | The user cannot see the folder or any of its contents — it is hidden from their view entirely |
+| **View Only** | The user can open and read documents in the folder; downloading can be enabled or disabled separately |
+| **Edit** | The user can upload new documents, rename files, and delete documents within the folder |
+
+### Setting Folder Permissions
+
+<Steps>
+  <Step title="Locate the Folder">
+    Navigate to the **Documents** tab and find the folder whose permissions you want to configure.
+  </Step>
+  <Step title="Open the Permissions Panel">
+    Right-click on the folder, or click its **⋮** menu, and select **Manage Permissions**. The permissions panel opens on the right side of the screen.
+  </Step>
+  <Step title="Select a User or Group">
+    In the permissions panel, find the user or group you want to configure. You can search by name if your project has a large team.
+  </Step>
+  <Step title="Choose a Permission Level">
+    Click the current permission level next to the user's name and select the appropriate option: **No Access**, **View Only**, or **Edit**.
+  </Step>
+  <Step title="Save">
+    Click **Save**. The new permission takes effect immediately — the user's access is updated without requiring them to log out or refresh.
+  </Step>
+</Steps>
+
+<Info>
+  Permissions set on a parent folder are **automatically inherited** by all subfolders within it. If you grant a user **View Only** access to *"03 – Contracts and Agreements"*, they will have the same access to every subfolder beneath it unless you explicitly override the setting on an individual subfolder.
+</Info>
+
+## Restricting Downloads
+
+In some situations — particularly during due diligence — you may want counterparties or external advisors to be able to read documents without being able to save copies locally. Closd lets you **disable downloading** for any folder independently of view access.
+
+When downloads are disabled on a folder:
+- Users with **View Only** access can open and read documents in the browser.
+- The download button is hidden and the documents cannot be saved to their device.
+- Users with **Edit** access retain the ability to download, as they need to work with the files locally.
+
+To enable or disable downloading, open the **Manage Permissions** panel for the folder and toggle the **Allow Downloads** option. The setting applies to all documents within that folder and its subfolders unless overridden.
+
+This is particularly useful for sharing sensitive financial models, legal opinions, or personal data with a counterparty during a due diligence process where you want to maintain control over document distribution.
+
+<Warning>
+  Review your project's access rights regularly — particularly when team members complete their work and move off the deal, or when a party exits the transaction. A user who retains access to a live project after their involvement has ended is a confidentiality risk. Remove or downgrade their access from the **Members** tab as soon as they are no longer actively involved.
+</Warning>

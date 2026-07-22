@@ -1,13 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "Closd",
+  "projectType": "saas",
+  "projectName": "Closd",
+  "projectDescription": "Closd is a legal transaction management platform that helps lawyers, in-house counsel, and dealmakers manage complex deals end-to-end — from project setup and due diligence through e-signature and closing.",
   "theme": "almond",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -65,7 +63,7 @@
         "tab": "Help",
         "groups": [
           {
-            "group": "Support",
+            "group": "FAQ",
             "pages": [
               "help/faq",
               "help/security",
@@ -76,11 +74,27 @@
       }
     ]
   },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Go to Closd",
-      "href": "https://app.closd.com"
-    }
-  }
+  "keyFeatures": [
+    "Project management with interactive checklists and task tracking",
+    "Virtual Data Room (VDR) for secure due diligence",
+    "Integrated electronic signature via DocuSign and CertEurope",
+    "Automated closing binder and transaction bible generation",
+    "Long-term electronic archiving with legal probative value (Arkhineo)",
+    "Granular access rights and participant confidentiality",
+    "Q&A module for structured due diligence workflows",
+    "Full audit trail and user action logs",
+    "Reusable templates for recurring transaction types",
+    "Real-time progress visibility across all stakeholders"
+  ],
+  "publicApiSurface": [
+    "Project creation and management",
+    "Checklist creation and automation",
+    "Document upload and folder management",
+    "User/team invitation and role assignment",
+    "Data room setup and permissions",
+    "Q&A workflow management",
+    "E-signature sending via DocuSign / CertEurope",
+    "Closing binder generation",
+    "Electronic safe / long-term archive"
+  ]
 }

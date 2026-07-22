@@ -1,0 +1,76 @@
+---
+title: "Set Data Room Permissions and Control Document Access"
+sidebarTitle: "Permissions"
+description: "Configure who can view, download, or print documents in your Closd data room with user-level and group-level permission settings."
+---
+
+Controlling who can access which documents is one of the most critical responsibilities when running a due diligence process. Closd lets you set permissions at the folder or individual document level, for single users or entire groups — giving you the precision to run a competitive process without exposing sensitive materials to the wrong parties.
+
+## User Groups
+
+When you have multiple bidders or advisory teams, managing permissions user by user quickly becomes unmanageable. Groups let you treat an entire team as a single unit for permission purposes. For example, you might create a group called "Bidder A", another called "Bidder B", and a third called "Sell-Side Legal" — each with a different level of access to different folders.
+
+To create a group:
+
+<Steps>
+  <Step title="Open Data Room Settings">
+    Inside your project's Data Room, click **Settings** in the top navigation.
+  </Step>
+  <Step title="Navigate to Groups">
+    Select **Groups** from the settings menu, then click **New Group**.
+  </Step>
+  <Step title="Name the group">
+    Give the group a clear, descriptive name (e.g. "Bidder A — Financial Advisors") so it is immediately recognisable when assigning permissions.
+  </Step>
+  <Step title="Add users">
+    Search for users by name or email address and add them to the group. Users must already have been invited to the data room to appear in the search.
+  </Step>
+  <Step title="Save and assign permissions">
+    Save the group, then navigate to the relevant folder or document to assign the group's permission level.
+  </Step>
+</Steps>
+
+## Permission Levels
+
+Closd offers four permission levels that you can apply to any folder or document. Permissions assigned to a folder cascade down to all files within it unless you override them at the document level.
+
+| Level | View | Download | Print | Upload |
+|---|---|---|---|---|
+| No Access | ✗ | ✗ | ✗ | ✗ |
+| View Only | ✓ | ✗ | ✗ | ✗ |
+| View & Download | ✓ | ✓ | ✗ | ✗ |
+| Full Access | ✓ | ✓ | ✓ | ✓ |
+
+Set the most restrictive permission at the root level and selectively loosen access for specific folders as your process progresses. This approach reduces the risk of accidentally exposing documents that are not yet ready for disclosure.
+
+<Warning>
+  Permission changes take effect immediately for all active sessions. If a user is currently browsing the data room when you revoke their access, they will lose access the next time they attempt to open a document — there is no delay or grace period.
+</Warning>
+
+## Participant Confidentiality
+
+In a competitive bidding process, you do not want Bidder A to know that Bidder B is also reviewing the data room — and vice versa. Closd enforces participant confidentiality by default: no user can see the names, email addresses, or activity of any other participant in the data room.
+
+This applies to all participant roles. Buyers, their advisors, and external consultants see only their own access and their own Q&A threads. Only data room administrators have visibility across all participants and groups.
+
+## Watermarking
+
+When you permit a user or group to download documents, Closd can automatically apply a dynamic watermark to every downloaded PDF. The watermark displays the downloader's full name, email address, and the date and time of the download — making it possible to identify the source if a document is later shared outside the data room.
+
+To enable watermarking:
+
+<Steps>
+  <Step title="Open Data Room Settings">
+    Navigate to **Settings** within your Data Room.
+  </Step>
+  <Step title="Go to Security">
+    Select the **Security** tab from the settings menu.
+  </Step>
+  <Step title="Enable Watermarking">
+    Toggle **Enable Watermarking** on. Watermarks will be applied automatically to all subsequent downloads across all users and groups.
+  </Step>
+</Steps>
+
+<Tip>
+  Enable watermarking before you grant any download permissions. If you enable it after some documents have already been downloaded without watermarks, those earlier copies will not be retroactively protected.
+</Tip>
